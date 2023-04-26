@@ -12,11 +12,6 @@ jobs:
       
     - name: Build with Maven
       run: mvn -B package --file app/pom.xml
-      
-    - uses: actions/upload-artifact@v1
-      with:
-        name: verademo.war
-        path: target/verademo.war     
         
   static_analysis:
     name: Static Analysis
